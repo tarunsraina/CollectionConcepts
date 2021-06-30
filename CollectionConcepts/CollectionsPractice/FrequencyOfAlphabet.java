@@ -1,5 +1,6 @@
 package CollectionsPractice;
 
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -28,7 +29,14 @@ public class FrequencyOfAlphabet {
 			}
 		}
 		
-		System.out.print(ht);
+		//System.out.println(ht);
+		
+		Enumeration<Integer> enumeration=ht.keys();
+		
+		int count=enumeration.nextElement();
+		//System.out.println(count);
+	
+		
 	}
 
 }
