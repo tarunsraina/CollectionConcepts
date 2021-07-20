@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -13,9 +14,7 @@ public class HashMapConcept {
 		// key-value pairs
 		// ex:Emp_ID corresponding to Emp_names
 		// map is independent interface,not a child Interface of Collection
-	
 		// Duplicate keys are not allowed,duplicate value is allowed.
-		
 		// underlying DS is HashTable
 		// Insertion order is not preserved
 		// Null key is allowed [only once]
@@ -61,7 +60,7 @@ public class HashMapConcept {
 			System.out.print(entry.getValue()+" ");
 		}
 		
-		
+		//when you need both key and value
 		Set s=hm.entrySet();
 		Iterator it=s.iterator();
 		while(it.hasNext())
@@ -70,6 +69,26 @@ public class HashMapConcept {
 			System.out.print(entry.getKey());
 			System.out.print(entry.getValue());
 		}
+		
+		System.out.println();
+		
+		//When you need only keys
+		
+		System.out.println("*****keys******");
+		Set<Integer> keys=hm.keySet();
+		for(Integer i:keys)
+		{
+			System.out.println(i);
+		}
+		
+		//when you need only values
+		System.out.println("*****values******");
+		Collection<Integer> values=hm.values();
+		for(Integer val:values)
+		{
+			System.out.println(val);
+		}
+		
 		
 		
 		

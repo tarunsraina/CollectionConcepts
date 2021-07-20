@@ -7,10 +7,11 @@ public class SwapElements {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		ArrayList a1=new ArrayList();
-		ArrayList a2=new ArrayList();
+		ArrayList<Integer> a1=new ArrayList<>();
+		ArrayList<Integer> a2=new ArrayList<>();
 		System.out.println("Enter n");
 		int n=sc.nextInt();
+		
 		System.out.println("Enter values for ArrayList 1");
 		for(int i=0;i<n;i++)
 		{
@@ -23,6 +24,7 @@ public class SwapElements {
 		}
 		System.out.println("Enter the index to be swapped");
 		int index=sc.nextInt();
+		sc.close();
 		if(index<0||index>n)
 		{
 			System.out.println("Cannot be swapped,try again!");

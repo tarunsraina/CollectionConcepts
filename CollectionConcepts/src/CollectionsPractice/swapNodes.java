@@ -10,13 +10,13 @@ public class swapNodes {
 		System.out.println("enter size of Linked list");
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		LinkedList list=new LinkedList();
+		LinkedList<Integer> list=new LinkedList<>();
 		for(int i=0;i<=n;i++)
 		{
 			list.add(sc.nextInt());
 		}
 		System.out.println("Liked list before "+list);
-		
+		sc.close();
 
 		
 		for(int i=1;i<=n;i++)
@@ -33,7 +33,7 @@ public class swapNodes {
 		}
 		
 		
-		System.out.println("Liked list after "+list);
+		System.out.println("Linked list after "+list);
 		
 
 	}
